@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LUXORA | Style that speaks.</title>
+  <meta name="description" content="LUXORA is a premium fashion and lifestyle store. Shop clothing, footwear, accessories and bags in natural materials.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/components.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__copy">
+            <h1 id="heroTitle" class="hero__title">Style that speaks.</h1>
+            <p class="hero__text">Considered wardrobe pieces in wool, linen, silk and leather. Cut cleanly, made to last and easy to wear every day.</p>
+            <div class="hero__actions">
+              <a class="btn-lux" href="shop.html">Shop the collection</a>
+              <a class="btn-lux btn-lux--outline" href="#new-arrivals">See new arrivals</a>
+            </div>
+          </div>
+          <div class="hero__media">
+            <img src="assets/images/hero.svg" alt="A charcoal wool blazer in front of a bronze arch" width="1200" height="1500" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip" aria-label="Our promises">
+      <div class="container">
+        <ul class="service-list">
+          <li><i class="bi bi-truck" aria-hidden="true"></i> Free delivery over &#8377;5,000</li>
+          <li><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Easy 14-day returns</li>
+          <li><i class="bi bi-gem" aria-hidden="true"></i> Natural, long-wearing materials</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categoriesTitle">
+      <div class="container">
+        <div class="section-head"><h2 id="categoriesTitle">Shop by category</h2></div>
+        <div class="category-grid">
+        <a class="category-card" href="shop.html?category=Clothing">
+          <img src="assets/images/product-1-a.svg" alt="" width="800" height="1000" loading="lazy">
+          <span class="category-card__label"><span class="category-card__name">Clothing</span><span class="category-card__text">Tailoring, linen and silk</span></span>
+        </a>
+        <a class="category-card" href="shop.html?category=Footwear">
+          <img src="assets/images/product-5-a.svg" alt="" width="800" height="1000" loading="lazy">
+          <span class="category-card__label"><span class="category-card__name">Footwear</span><span class="category-card__text">Sneakers, boots and loafers</span></span>
+        </a>
+        <a class="category-card" href="shop.html?category=Accessories">
+          <img src="assets/images/product-8-a.svg" alt="" width="800" height="1000" loading="lazy">
+          <span class="category-card__label"><span class="category-card__name">Accessories</span><span class="category-card__text">Eyewear, scarves and small leather</span></span>
+        </a>
+        <a class="category-card" href="shop.html?category=Bags">
+          <img src="assets/images/product-11-a.svg" alt="" width="800" height="1000" loading="lazy">
+          <span class="category-card__label"><span class="category-card__name">Bags</span><span class="category-card__text">Totes, crossbodies and weekenders</span></span>
+        </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="new-arrivals" aria-labelledby="newTitle">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="newTitle">New arrivals</h2>
+          <a class="text-link" href="shop.html">View all products</a>
+        </div>
+        <div class="product-grid" id="newArrivals"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="promoTitle">
+      <div class="container">
+        <div class="promo">
+          <div class="promo__copy">
+            <h2 id="promoTitle" class="promo__title">Boots for the colder months</h2>
+            <p>Soft suede, stacked soles and a fit that needs no breaking in. Our Chelsea boot is back in two finishes.</p>
+            <a class="btn-lux btn-lux--light" href="product-details.html?id=6">View the Chelsea boots</a>
+          </div>
+          <div class="promo__media">
+            <img src="assets/images/product-6-b.svg" alt="Dark suede Chelsea boots" width="800" height="1000" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="bestTitle">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="bestTitle">Best sellers</h2>
+          <a class="text-link" href="shop.html">Shop everything</a>
+        </div>
+        <div class="product-grid" id="bestSellers"></div>
+      </div>
+    </section>
+
+    <section class="section section--sand" aria-labelledby="newsletterTitle">
+      <div class="container">
+        <div class="newsletter">
+          <h2 id="newsletterTitle">Hear about new arrivals first</h2>
+          <p>Join the list for early access to new pieces. This is a demo form, so your email is not saved or sent.</p>
+          <form class="newsletter__form" id="newsletterForm">
+            <div class="field field--inline">
+              <label for="newsletterEmail">Email address</label>
+              <input id="newsletterEmail" name="email" type="email" autocomplete="email" placeholder="name@example.com" aria-describedby="newsletterEmail-error">
+              <p class="field-error" id="newsletterEmail-error"></p>
+            </div>
+            <button class="btn-lux" type="submit">Subscribe</button>
+          </form>
+          <p class="form-status" id="newsletterStatus" role="status"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

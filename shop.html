@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop all products | LUXORA</title>
+  <meta name="description" content="Browse LUXORA clothing, footwear, accessories and bags. Search, filter by category and price, and sort to find your next piece.">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/components.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <div class="container">
+      <div class="page-head">
+        <nav class="crumbs" aria-label="Breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Home</a></li><li class="breadcrumb-item active" aria-current="page">Shop</li></ol></nav>
+        <h1 class="page-title">Shop</h1>
+        <p class="page-count" id="productCount" role="status">14 products</p>
+      </div>
+      <div class="row g-4 g-xl-5 pb-5">
+        <aside class="col-lg-3" aria-label="Filters">
+          <button class="btn-lux btn-lux--outline btn-lux--block filters-toggle d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#filterPanel" aria-expanded="false" aria-controls="filterPanel">
+            <i class="bi bi-sliders" aria-hidden="true"></i> Search, filter and sort
+          </button>
+          <div class="collapse d-lg-block" id="filterPanel">
+            <div class="filters">
+              <form id="searchForm" role="search" class="filter-group">
+                <label class="field-label" for="shopSearch">Search</label>
+                <input class="search-input" id="shopSearch" type="search" placeholder="Name or category" autocomplete="off">
+              </form>
+              <fieldset class="filter-group">
+                <legend class="field-label">Category</legend>
+                <label class="choice"><input type="radio" name="category" value="All"><span>All</span></label>
+                <label class="choice"><input type="radio" name="category" value="Clothing"><span>Clothing</span></label>
+                <label class="choice"><input type="radio" name="category" value="Footwear"><span>Footwear</span></label>
+                <label class="choice"><input type="radio" name="category" value="Accessories"><span>Accessories</span></label>
+                <label class="choice"><input type="radio" name="category" value="Bags"><span>Bags</span></label>
+              </fieldset>
+              <div class="filter-group">
+                <label class="field-label" for="priceRange">Maximum price</label>
+                <input class="price-range" id="priceRange" type="range" min="0" max="12000" step="500" value="12000">
+                <p class="filter-hint" id="priceLabel">Up to &#8377;12,000</p>
+              </div>
+              <div class="filter-group">
+                <label class="field-label" for="sortSelect">Sort by</label>
+                <select class="select-input" id="sortSelect">
+                  <option value="featured">Featured</option>
+                  <option value="price-asc">Price: low to high</option>
+                  <option value="price-desc">Price: high to low</option>
+                  <option value="name">Name: A to Z</option>
+                </select>
+              </div>
+              <div class="filter-group">
+                <label class="choice"><input type="checkbox" id="savedOnly"><span>Show saved items only</span></label>
+              </div>
+              <button type="button" class="btn-lux btn-lux--outline btn-lux--block" data-clear-filters>Clear all filters</button>
+            </div>
+          </div>
+        </aside>
+        <section class="col-lg-9" aria-label="Products">
+          <div class="product-grid product-grid--shop" id="productGrid"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <h2>No products found</h2>
+            <p id="emptyText">Try a different search, widen the price range or clear your filters.</p>
+            <button type="button" class="btn-lux" data-clear-filters>Clear all filters</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/shop.js" defer></script>
+</body>
+</html>
