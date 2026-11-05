@@ -66,12 +66,6 @@ An internet connection is needed for Bootstrap, Bootstrap Icons and Google Fonts
 - Product images are original SVG illustrations created for this project, not photographs.
 - Bootstrap CDN links do not use Subresource Integrity hashes. Add them if you deploy the site.
 
-## Screenshots
-
-- Home: _placeholder_
-- Shop: _placeholder_
-- Product details: _placeholder_
-
 ## Future improvements
 
 - Replace SVG artwork with real product photography
